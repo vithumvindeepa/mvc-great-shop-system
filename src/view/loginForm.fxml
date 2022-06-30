@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainContext" prefHeight="517.0" prefWidth="525.0" styleClass="logincolor" stylesheets="@../assest/css/stayle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginFormController">
+   <children>
+      <AnchorPane layoutY="-3.0" opacity="0.98" prefHeight="521.0" prefWidth="226.0" style="-fx-background-color: white;">
+         <children>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#0cb8d6" layoutX="24.0" layoutY="308.0" unFocusColor="#f91bb9" />
+            <JFXTextField fx:id="txtUsername" focusColor="#0cb8d6" layoutX="24.0" layoutY="216.0" unFocusColor="#f91bb9" />
+            <Text fill="#f91bb9" layoutX="83.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="88.763671875">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+            <Text fill="#f91bb9" layoutX="83.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="88.763671875">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="64.0" layoutY="405.0" onAction="#btnlogin" opacity="0.95" prefHeight="39.0" prefWidth="99.0" style="-fx-background-radius: 80;" stylesheets="@../assest/css/stayle.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value=".dlblcolor" />
+                  <String fx:value="logincolor" />
+               </styleClass>
+            </JFXButton>
+            <ImageView fitHeight="114.0" fitWidth="135.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXProgressBar layoutX="8.0" layoutY="482.0" prefHeight="5.0" prefWidth="207.0" style="-fx-border-color: #072b5e;" />
+            <ImageView fitHeight="154.0" fitWidth="163.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="244.0" fitWidth="243.0" layoutX="263.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/img/360_F_267271316_KtYlIHJJjHKu1lGHcnDMDaExKHwtthL3-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

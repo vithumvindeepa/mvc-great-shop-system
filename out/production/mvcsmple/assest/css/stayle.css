@@ -1,0 +1,64 @@
+.customer{
+    fx-background-color: aqua;
+}
+.logincolor{
+    -fx-background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.dlblcolor{
+    -fx-background-color:linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.imgcolor{
+    -fx-background-color:linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    -fx-background-radius: 500px 0px 0px 0px;
+}
+
+.round-button {
+    -fx-border-radius-color:#0652DD;
+    -fx-background-radius: 5px 50px 50px 5px;
+}
+
+
+
+.round-lable {
+    -fx-border-radius-color:#0652DD;
+    -fx-background-radius: 0px 0px 0px 50px;
+}
+.rounddashlable {
+    -fx-border-radius-color:#0652DD;
+    -fx-background-radius: 0px 0px 70px 100px;
+}
+
+.mylable {
+    -fx-background-color: linear-gradient(to left bottom, #010f11, #002439, #00366e, #0043a5, #0041cd, #0050de, #005fee, #006eff, #0092ff, #00aeff, #00c7fe, #07dcf0);
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color: linear-gradient(to left bottom, #010f11, #002439, #00366e, #0043a5, #0041cd, #0050de, #005fee, #006eff, #0092ff, #00aeff, #00c7fe, #07dcf0);
+}
+
+.table-view .column-header .label{
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #2f3640;
+}
+
+/*.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+}*/
+
+.table-row-cell:selected .text {
+    -fx-fill : white ;
+}
+
+
+
+
