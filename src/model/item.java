@@ -8,4 +8,6 @@ public class item {
     private int unitPrice;
     private int itemType;
 
+    public item() {
+    }
 }
