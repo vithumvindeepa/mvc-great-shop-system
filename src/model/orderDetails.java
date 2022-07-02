@@ -8,4 +8,11 @@ public class orderDetails {
 
     public orderDetails() {
     }
+
+    public orderDetails(int orderId, int itemCode, int orderQty, double discount) {
+        this.orderId = orderId;
+        this.itemCode = itemCode;
+        this.orderQty = orderQty;
+        this.discount = discount;
+    }
 }
