@@ -67,4 +67,16 @@ public class item {
     public void setItemType(int itemType) {
         this.itemType = itemType;
     }
+
+    @Override
+    public String toString() {
+        return "item{" +
+                "itemCode=" + itemCode +
+                ", description='" + description + '\'' +
+                ", packSize=" + packSize +
+                ", quantityOnHand=" + quantityOnHand +
+                ", unitPrice=" + unitPrice +
+                ", itemType=" + itemType +
+                '}';
+    }
 }
