@@ -10,4 +10,13 @@ public class item {
 
     public item() {
     }
+
+    public item(int itemCode, String description, int packSize, int quantityOnHand, int unitPrice, int itemType) {
+        this.itemCode = itemCode;
+        this.description = description;
+        this.packSize = packSize;
+        this.quantityOnHand = quantityOnHand;
+        this.unitPrice = unitPrice;
+        this.itemType = itemType;
+    }
 }
