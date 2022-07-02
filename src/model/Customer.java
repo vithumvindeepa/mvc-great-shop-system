@@ -9,4 +9,6 @@ public class Customer {
     private String province;
     private int postalCode;
 
+    public Customer() {
+    }
 }
