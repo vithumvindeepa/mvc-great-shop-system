@@ -6,5 +6,6 @@ public class orderDetails {
     private int orderQty;
     private double discount;
 
-
+    public orderDetails() {
+    }
 }
