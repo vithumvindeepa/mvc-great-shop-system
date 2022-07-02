@@ -11,4 +11,14 @@ public class Customer {
 
     public Customer() {
     }
+
+    public Customer(int customerID, String customerTitle, String name, String address, String city, String province, int postalCode) {
+        this.customerID = customerID;
+        this.customerTitle = customerTitle;
+        this.name = name;
+        this.address = address;
+        this.city = city;
+        this.province = province;
+        this.postalCode = postalCode;
+    }
 }
