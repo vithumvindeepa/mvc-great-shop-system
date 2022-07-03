@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="585.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
+<AnchorPane prefHeight="585.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.orderController">
    <children>
       <Label alignment="CENTER" layoutX="157.0" opacity="0.87" prefHeight="45.0" prefWidth="737.0" stylesheets="@../../../finalproject/Vishion%20Hospital/src/style/styles.css" text="ORDER">
          <font>

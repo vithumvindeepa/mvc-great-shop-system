@@ -153,8 +153,8 @@
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="#07e3d7" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#f91bb9" />
+                  <Stop color="#08fff7" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>
@@ -166,8 +166,8 @@
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="#07e3d7" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#f91bb9" />
+                  <Stop color="#08fff7" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>

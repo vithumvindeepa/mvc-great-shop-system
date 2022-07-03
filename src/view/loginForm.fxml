@@ -36,9 +36,14 @@
                </styleClass>
             </JFXButton>
             <ImageView fitHeight="114.0" fitWidth="135.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
-            <JFXProgressBar layoutX="8.0" layoutY="482.0" prefHeight="5.0" prefWidth="207.0" style="-fx-border-color: #072b5e;" />
+            <JFXProgressBar layoutX="8.0" layoutY="482.0" prefHeight="5.0" prefWidth="207.0" style="-fx-border-color: #f91bb9;" />
             <ImageView fitHeight="154.0" fitWidth="163.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
 
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="145.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/img/images-removebg-preview%20(1).png" />
+               </image>
             </ImageView>
          </children>
       </AnchorPane>
