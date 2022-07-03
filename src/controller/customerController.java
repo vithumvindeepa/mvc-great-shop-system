@@ -3,12 +3,17 @@ package controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class customerController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class customerController implements Initializable {
+
     public AnchorPane customerContext;
     public JFXTextField txtcustomerId;
     public TableView tblCustomer;
@@ -27,6 +32,11 @@ public class customerController {
     public JFXTextField txtCity;
     public JFXButton btnSave;
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+    
     public void btnSave(ActionEvent actionEvent) {
 
     }
@@ -42,6 +52,5 @@ public class customerController {
     public void btnDelete(ActionEvent actionEvent) {
         
     }
-
 
 }
