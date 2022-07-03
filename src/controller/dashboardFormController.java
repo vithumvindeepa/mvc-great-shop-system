@@ -23,7 +23,7 @@ import java.util.Date;
 import java.util.ResourceBundle;
 
 
-public class DashboardFormController implements Initializable {
+public class dashboardFormController implements Initializable {
     public AnchorPane DashboardForm;
     public AnchorPane LoginContext;
     public ImageView LoardContext;

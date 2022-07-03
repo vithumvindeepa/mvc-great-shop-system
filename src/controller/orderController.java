@@ -2,7 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 
-public class OrderController {
+public class orderController {
     public void btnSave(ActionEvent actionEvent) {
 
     }

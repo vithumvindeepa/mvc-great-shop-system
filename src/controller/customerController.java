@@ -4,9 +4,8 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
-import model.Customer;
 
-public class CustomerController {
+public class customerController {
     public AnchorPane customerContext;
     public JFXTextField customer;
     public JFXTextField txtcustomerId;
