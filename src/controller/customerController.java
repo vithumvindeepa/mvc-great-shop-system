@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.regex.Pattern;
 
 public class customerController implements Initializable {
 
@@ -32,8 +33,21 @@ public class customerController implements Initializable {
     public JFXTextField txtCity;
     public JFXButton btnSave;
 
+    LinkedHashMap<TextField, Pattern> map = new LinkedHashMap<>();
+    Pattern titlePattern = Pattern.compile("^[A-z]");
+    Pattern namePattern = Pattern.compile("^[A-z]{3,40}$");
+    Pattern addressPattern = Pattern.compile("^[A-z]{3,40}$");
+    Pattern cityPattern = Pattern.compile("^[A-z]{3,40}$");
+    Pattern provincePattern = Pattern.compile("^[A-z]{3,40}$");
+    Pattern postalcodePattern = Pattern.compile("^{3,40}$");
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        storeValidations();
+    }
+
+    private void storeValidations() {
+
 
     }
     
@@ -53,4 +67,7 @@ public class customerController implements Initializable {
         
     }
 
+    public void validationOnAction(KeyEvent keyEvent) {
+
+    }
 }
