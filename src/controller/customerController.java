@@ -29,7 +29,7 @@ public class customerController implements Initializable {
     public JFXTextField txtPostalCode;
     public JFXTextField txtName;
     public JFXTextField txtProvince;
-    public JFXTextField txtAddreaa;
+    public JFXTextField txtAddress;
     public JFXTextField txtCity;
     public JFXButton btnSave;
 
@@ -47,7 +47,12 @@ public class customerController implements Initializable {
     }
 
     private void storeValidations() {
-
+        map.put(txtTitle, titlePattern);
+        map.put(txtName, namePattern);
+        map.put(txtAddress, addressPattern);
+        map.put(txtCity, cityPattern);
+        map.put(txtProvince, provincePattern);
+        map.put(txtPostalCode, postalcodePattern);
 
     }
     
