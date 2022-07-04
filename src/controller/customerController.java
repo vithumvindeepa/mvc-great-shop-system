@@ -38,7 +38,7 @@ public class customerController implements Initializable {
     public JFXButton btnSave;
 
     LinkedHashMap<TextField, Pattern> map = new LinkedHashMap<>();
-    Pattern titlePattern = Pattern.compile("^[A-z]");
+    Pattern titlePattern = Pattern.compile("^[A-z]{3,40}$");
     Pattern namePattern = Pattern.compile("^[A-z]{3,40}$");
     Pattern addressPattern = Pattern.compile("^[A-z]{3,40}$");
     Pattern cityPattern = Pattern.compile("^[A-z]{3,40}$");
