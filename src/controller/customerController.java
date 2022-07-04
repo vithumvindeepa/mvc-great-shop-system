@@ -1,5 +1,6 @@
 package controller;
 
+import Util.UtilController;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -7,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -45,6 +47,8 @@ public class customerController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        btnSave.setDisable(true);
         storeValidations();
     }
 
