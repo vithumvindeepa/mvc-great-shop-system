@@ -6,10 +6,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
+import java.util.LinkedHashMap;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
@@ -73,6 +75,13 @@ public class customerController implements Initializable {
     }
 
     public void validationOnAction(KeyEvent keyEvent) {
+        Object response = UtilController.validate(map, btnSave);
+        if (keyEvent.getCode() == KeyCode.ENTER)
+            if (response instanceof TextField) {
+                TextField errorText = (TextField) response;
+                errorText.requestFocus();
+            } else if (response instanceof Boolean) {
 
+            }
     }
 }
