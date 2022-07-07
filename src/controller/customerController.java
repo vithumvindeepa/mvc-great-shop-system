@@ -1,6 +1,7 @@
 package controller;
 
 import Util.UtilController;
+import assest.tm.customerTm;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import db.DbConnection;
@@ -23,7 +24,7 @@ public class customerController implements Initializable {
 
     public AnchorPane customerContext;
     public JFXTextField txtcustomerId;
-    public TableView tblCustomer;
+    public TableView<customerTm> tblCustomer;
     public TableColumn colId;
     public TableColumn colTital;
     public TableColumn colName;
@@ -54,6 +55,9 @@ public class customerController implements Initializable {
 
         btnSave.setDisable(true);
         txtNavigations();
+        loadtxtCusromerId();
+        getAllcustomer();
+
     }
 
          // .........Text field navigations...........
@@ -81,10 +85,12 @@ public class customerController implements Initializable {
             }
     }
 
-    private void loadtxtDoctorId() {
+    //..........Customer id auto generate method...........
+
+    private void loadtxtCusromerId() {
         try {
             int c = 0;
-            ResultSet rs = DbConnection.search("select count(DId) AS x from doctor");
+            ResultSet rs = DbConnection.search("select count(cust_id) AS x from Customer");
             if (rs.next()) {
                 c = Integer.parseInt(rs.getString("x"));
                 c++;
@@ -93,6 +99,12 @@ public class customerController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    //set valuse to coustomrtm form Coustomer model
+    
+    private void getAllcustomer() {
+
     }
     
     public void btnSave(ActionEvent actionEvent) {
