@@ -22,4 +22,11 @@ public class DbConnection {
         return this.connection;
     }
 
+    public static ResultSet search(String query)throws Exception {
+        if (connection == null) {
+            new DbConnection();
+        }
+
+        return connection.createStatement().executeQuery(query);
+    }
 }
